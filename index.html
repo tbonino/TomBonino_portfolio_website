@@ -8,45 +8,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--changing this changes how the page is viewed. 
         Right now it is defaulting to the device attributes-->
-    <title>Bob the Builder</title>
+    <title>Tom Bonino's Portfolio Site</title>
     <!--Link to favicon-->
     <link
       rel="shortcut icon"
-      href="./media/images/jerrypic.PNG"
+      href="./Media/img/favicon.png"
       type="image/x-icon"
     />
   </head>
   <body>
+    <!--reuse header for every page-->
     <header id="Page Header">
       <!-- Navigational Links -->
-      <div id="logoContainer">
-        <img
-          src="./media/images/jerrypic.PNG"
-          alt="Company logo"
-          height=""
-          width=""
-        />
-      </div>
       <div>
+        <h5>Navigation Links:</h5>
         <nav id="navbar">
           <a href="./index.html" class="navOption">Home</a>
-          <a href=".html/portfolio.html" class="navOption">Portfolio</a>
-          <a href="./newsletter.html" class="navOption">Newsletter</a>
+          <a href="./html/resume.html" class="navOption">My Resume</a>
+          <a href="./html/fun_facts.html" class="navOption">My Fun Facts</a>
         </nav>
       </div>
-      <div id="searchBarContainer">
-        <label for="searchBar"></label>
-        <input type="searchBar" name="searchBar" id="searchBar" />
-      </div>
-      <div id="loginContainer">
-        <a href="" class="navOption">Login</a>
-      </div>
-      <hr />
     </header>
-
     <hr />
+    <!--enclose the code of the landing page in main-->
+    <main>
+      <h1>Welcome to Tom Bonino's Portfolio Site!</h1>
+      <!--profile picture and caption-->
+      <article>
+        <figure>
+          <img
+            src="./Media/img/Single Profile.jpg"
+            alt="A photo of me in London."
+            height="640"
+            width="480"
+          />
+          <figcaption>"The Buck stops here!" - Harry S. Truman</figcaption>
+        </figure>
+      </article>
+      <!--Elevator pitch and links to other pages-->
+      <article>
+        <div>
+          <p>
+            My name is Tom Bonino, and I am working to begin a career in
+            Computer Science - more specifically, I hope to become a Software
+            Engineer. A little bit more about me: I am a husband and father, as
+            well as a Data Science Coop currently with Cummins-Meritor. I get to
+            claim Oxford, MI as my hometown, and previously obtained a BS in
+            Youth and Family Ministry from what is now Rochester University. In
+            the interest of supporting a family better, I have been working
+            towards a second BS in Computer Science, as computers were always my
+            other passion alongside working with kids. I get to count Dart
+            Container among my previous employers, where I was truly blooded in
+            the "real world" and had a fantastic experience learning the ropes
+            in Corporate America. Following my wife's work once her doctorate
+            from MSU was complete, we now live in Clarkston, MI, and I have been
+            pursuing a BS in Computer Science since 2020. To learn more about
+            me, just follow the links below!
+          </p>
+        </div>
+        <div>
+          <nav id="introLinks">
+            <a href="./html/resume.html" class="navOption">My Resume</a>
+            <a href="./html/fun_facts.html" class="navOption">My Fun Facts</a>
+          </nav>
+        </div>
+      </article>
+      <!--progress bar, as a percentage reported by my DegreeWorks as of 9/23/23-->
+      <div>
+        <h3>Progress towards my BS in Computer Science:</h3>
+        <progress value="89" max="100" />
+      </div>
+    </main>
+    <hr />
+    <!--include all links/contact info here-->
     <footer>
-      <address>115 Library Drive, Rochester, MI 48309</address>
+      <div id="contactInformation">
+        <a href="tel:12489783231">Phone</a>
+        <a href="mailto:tbonino@protonmail.com">Email</a>
+      </div>
+      <address>5530 Mary Sue St., Clarkston, MI 48346</address>
+      <div id="socialMediaLinks">
+        <a href="https://www.facebook.com/tom.bonino">facebook</a>
+        <a href="https://www.linkedin.com/in/thomas-bonino-038a20b7/"
+          >LinkedIn</a
+        >
+      </div>
     </footer>
   </body>
 </html>
