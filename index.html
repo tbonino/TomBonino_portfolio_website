@@ -15,12 +15,19 @@
       href="./Media/img/favicon.png"
       type="image/x-icon"
     />
+    <!--link css style sheet-->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!--reuse header for every page-->
-    <header id="Page Header">
+    <header id="Page Header" class="pageHeader">
       <!-- Navigational Links -->
-      <div>
+      <div class="logo">
+        <figure>
+          <img src="/Media/img/favicon.png" alt="A 'B' Logo" />
+        </figure>
+      </div>
+      <div class="navbar">
         <h5>Navigation Links:</h5>
         <nav id="navbar">
           <a href="./index.html" class="navOption">Home</a>
@@ -31,45 +38,50 @@
     </header>
     <hr />
     <!--enclose the code of the landing page in main-->
-    <main>
+    <main class="landingPage">
       <h1>Welcome to Tom Bonino's Portfolio Site!</h1>
       <!--profile picture and caption-->
-      <article>
+      <article class="profileImg">
         <figure>
           <img
             src="./Media/img/Single Profile.jpg"
             alt="A photo of me in London."
-            height="640"
-            width="480"
           />
-          <figcaption>"The Buck stops here!" - Harry S. Truman</figcaption>
+          <figcaption class="quote">
+            "The Buck stops here!" - Harry S. Truman
+          </figcaption>
         </figure>
       </article>
       <!--Elevator pitch and links to other pages-->
       <article>
         <div>
-          <p>
+          <p class="introText">
             My name is Tom Bonino, and I am working to begin a career in
-            Computer Science - more specifically, I hope to become a Software
-            Engineer. A little bit more about me: I am a husband and father, as
-            well as a Data Science Coop currently with Cummins-Meritor. I get to
-            claim Oxford, MI as my hometown, and previously obtained a BS in
-            Youth and Family Ministry from what is now Rochester University. In
-            the interest of supporting a family better, I have been working
-            towards a second BS in Computer Science, as computers were always my
-            other passion alongside working with kids. I get to count Dart
-            Container among my previous employers, where I was truly blooded in
-            the "real world" and had a fantastic experience learning the ropes
-            in Corporate America. Following my wife's work once her doctorate
-            from MSU was complete, we now live in Clarkston, MI, and I have been
-            pursuing a BS in Computer Science since 2020. To learn more about
-            me, just follow the links below!
+            Computer Science.
+          </p>
+          <p class="elevatorPitch">
+            More specifically, I hope to become a Software Engineer. A little
+            bit more about me: I am a husband and father, as well as a Data
+            Science Coop currently with Cummins-Meritor. I get to claim Oxford,
+            MI as my hometown, and previously obtained a BS in Youth and Family
+            Ministry from what is now Rochester University. In the interest of
+            supporting a family better, I have been working towards a second BS
+            in Computer Science, as computers were always my other passion
+            alongside working with kids. I get to count Dart Container among my
+            previous employers, where I was truly blooded in the "real world"
+            and had a fantastic experience learning the ropes in Corporate
+            America. Following my wife's work once her doctorate from MSU was
+            complete, we now live in Clarkston, MI, and I have been pursuing a
+            BS in Computer Science since 2020. To learn more about me, just
+            follow the links below!
           </p>
         </div>
         <div>
-          <nav id="introLinks">
-            <a href="./html/resume.html" class="navOption">My Resume</a>
-            <a href="./html/fun_facts.html" class="navOption">My Fun Facts</a>
+          <nav id="introLinks" class="introLinks">
+            <a href="./html/resume.html" class="navOptionEmbed">My Resume</a>
+            <a href="./html/fun_facts.html" class="navOptionEmbed"
+              >My Fun Facts</a
+            >
           </nav>
         </div>
       </article>
@@ -82,12 +94,14 @@
     <hr />
     <!--include all links/contact info here-->
     <footer>
-      <div id="contactInformation">
+      <div id="contactInformation" class="contactInformation">
         <a href="tel:12489783231">Phone</a>
         <a href="mailto:tbonino@protonmail.com">Email</a>
       </div>
-      <address>5530 Mary Sue St., Clarkston, MI 48346</address>
-      <div id="socialMediaLinks">
+      <div class="addressInfo">
+        <address>5530 Mary Sue St., Clarkston, MI 48346</address>
+      </div>
+      <div id="socialMediaLinks" class="socialMediaLinks">
         <a href="https://www.facebook.com/tom.bonino">facebook</a>
         <a href="https://www.linkedin.com/in/thomas-bonino-038a20b7/"
           >LinkedIn</a

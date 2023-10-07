@@ -15,12 +15,19 @@
       href="../Media/img/favicon.png"
       type="image/x-icon"
     />
+    <!--link css style sheet-->
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <!--reuse header for every page-->
-    <header id="Page Header">
+    <header id="Page Header" class="pageHeader">
       <!-- Navigational Links -->
-      <div>
+      <div class="logo">
+        <figure>
+          <img src="/Media/img/favicon.png" alt="A 'B' Logo" />
+        </figure>
+      </div>
+      <div class="navbar">
         <h5>Navigation Links:</h5>
         <nav id="navbar">
           <a href="../index.html" class="navOption">Home</a>
@@ -31,42 +38,33 @@
     </header>
     <hr />
     <!--enclose the code of the fun facts page in main-->
-    <main>
+    <main class="funFactsPage">
       <!--main heading-->
       <h1>Some fun facts about me.</h1>
       <!--More photos-->
-      <div>
-        <h3>As metioned, I've started a family!</h3>
+      <h3>As metioned, I've started a family!</h3>
+      <div class="familyDesc">
         <figure>
           <img
             src="../Media/img/profile_image.jpg"
             alt="A photo of my wife and I in Seattle"
-            height="475"
-            width="480"
           />
           <figcaption>A photo of my wife and I in Seattle.</figcaption>
         </figure>
         <figure>
-          <img
-            src="../Media/img/baby.jpg"
-            alt="baby photo"
-            height="469"
-            width="683"
-          />
+          <img src="../Media/img/baby.jpg" alt="baby photo" />
           <figcaption>Our 5 month old daughter!</figcaption>
         </figure>
+      </div>
+      <div class="funPhoto">
         <figure>
-          <img
-            src="../Media/img/meet TW.jpg"
-            alt="Tommy Wiseau and I."
-            height="360"
-            width="480"
-          />
+          <img src="../Media/img/meet TW.jpg" alt="Tommy Wiseau and I." />
           <figcaption>
             I once got to meet Tommy Wiseau, who, if you know, you know.
           </figcaption>
         </figure>
       </div>
+      <hr />
       <!--favorite book section-->
       <article id="book">
         <h4>Favorite Book: Dune</h4>
@@ -93,16 +91,15 @@
       </article>
       <!--favorite tv show section-->
       <!--the trailer I've chosen seems to be forbidden from embed on YouTube's side. I'll see if I can find another before submission-->
-      <article id="tvShow">
-        <h4>Favorite TV Show: The Venture Bros.</h4>
+      <hr />
+      <h4>Favorite TV Show: The Venture Bros.</h4>
+      <article id="tvShow" class="tvShow">
         <!--show logo-->
         <div>
           <figure>
             <img
               src="../Media/img/venture_bros__logo__png.jpg"
               alt="The Venture Bros title splash."
-              width="398"
-              height="224"
             />
           </figure>
         </div>
@@ -131,6 +128,7 @@
           ></iframe>
         </div>
       </article>
+      <hr />
       <!--favorite song section-->
       <article id="song">
         <h4>(Current) Favorite Song: Tres Brujas - The Sword</h4>

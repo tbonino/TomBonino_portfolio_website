@@ -1,0 +1,135 @@
+/*try to dynamically account for width in the query*/
+@media screen {
+  /*body styling rules, try to impose a structure on all body stylings*/
+  body {
+    background-image: url(/Media/img/layered-waves-haikei.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    --font-color: white;
+    --link-color: #001220;
+    --other-color: #dec2b6;
+    color: var(--font-color);
+  }
+
+  * {
+    margin: 10px;
+    padding: 2px;
+    box-sizing: border-box;
+  }
+
+  /*get rid of hyperlink styling of anchors*/
+  a {
+    text-decoration: none;
+  }
+
+  /*help horizontal rule standout from background.*/
+  hr {
+    background-color: var(--other-color);
+  }
+
+  /*navbar links will be different colors from all others*/
+  footer a {
+    color: var(--font-color);
+  }
+
+  /*Links after introduction on landing page get their own color*/
+  .landingPage a {
+    color: #fa7268;
+  }
+
+  /*Introductory sentence explaining the gist of the website*/
+  .introText {
+    color: #fa7268;
+    font-size: x-large;
+  }
+
+  /*help logo stay a reasonable size depending on device*/
+  .logo img {
+    width: 10%;
+    height: 10%;
+    float: left;
+  }
+
+  /*Give the quote some styling to help it stand out*/
+  .quote {
+    float: right;
+    font-style: italic;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: larger;
+    color: var(--other-color);
+  }
+
+  .profileImg img {
+    width: 25%;
+    height: 25%;
+    float: right;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fa7268;
+    float: right;
+  }
+
+  .navbar a {
+    color: var(--link-color);
+  }
+
+  /*introduce dynamic reposnse to links*/
+  .navbar a:hover {
+    background-color: var(--other-color);
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  .familyDesc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .familyDesc img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .funPhoto img {
+    width: 35%;
+    height: 35%;
+  }
+
+  .tvShow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tvShow img {
+    width: 75%;
+    height: 75%;
+  }
+  footer a:hover {
+    background-color: var(--other-color);
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  .landingPage a:hover {
+    background-color: var(--other-color);
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  .funFactsPage a {
+    color: var(--other-color);
+  }
+
+  .funFactsPage a:hover {
+    color: var(--font-color);
+    background-color: var(--other-color);
+  }
+}

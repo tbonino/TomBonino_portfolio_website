@@ -15,12 +15,19 @@
       href="../Media/img/favicon.png"
       type="image/x-icon"
     />
+    <!--link css style sheet-->
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <!--reuse header for every page-->
-    <header id="Page Header">
+    <header id="Page Header" class="pageHeader">
       <!-- Navigational Links -->
-      <div>
+      <div class="logo">
+        <figure>
+          <img src="/Media/img/favicon.png" alt="A 'B' Logo" />
+        </figure>
+      </div>
+      <div class="navbar">
         <h5>Navigation Links:</h5>
         <nav id="navbar">
           <a href="../index.html" class="navOption">Home</a>
@@ -31,7 +38,7 @@
     </header>
     <hr />
     <!--enclose the code of the resume page in main-->
-    <main>
+    <main class="resumePage">
         <!--main heading-->
       <h1>Tom Bonino - Resume</h1>
       <!--sub heading with contact info-->
